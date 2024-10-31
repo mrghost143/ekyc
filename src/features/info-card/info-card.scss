@@ -1,0 +1,35 @@
+.info-card {
+    // background-color: red;
+
+    @apply border border-solid border-gray-500 rounded-lg px-8 py-6 flex flex-col gap-6;
+
+    li {
+        @apply text-black text-base leading-tight;
+
+        // Custom styling for list item numbering
+        counter-increment: list-counter;
+        /* Increment the custom counter */
+        position: relative;
+        padding-left: 2.5rem;
+
+        &::before {
+            content: counter(list-counter);
+            /* Use the custom counter */
+            // @apply text-gray-700; /* You can customize the color or any other styling */
+            /* Space between number and text */
+            @apply bg-gray-300-10 rounded-full;
+             position: absolute;
+            top: 0;
+            left: 0;
+            // text-align: center;
+            font-size: 1.4rem;
+            width: 1.8rem;
+            line-height: 1.68rem;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}

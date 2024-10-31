@@ -1,0 +1,16 @@
+.otp-form{
+    @apply flex gap-5 mb-5;
+    .input-field{
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem;
+        line-height: 2rem;
+        &-wrapper{
+            width: 13rem;
+            height: 8.5rem;
+            @apply rounded flex items-center justify-center;        
+        }
+    }
+    
+   
+}

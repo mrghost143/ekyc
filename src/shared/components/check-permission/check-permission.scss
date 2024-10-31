@@ -1,0 +1,16 @@
+.checkbox {
+  &-container {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  &-label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    @apply text-sm leading-normal;
+
+  }
+}

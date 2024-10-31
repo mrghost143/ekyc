@@ -1,0 +1,48 @@
+{
+  "email": [
+    "We need to verify your email to share  OTPs, market updates, reports, and account statements.",
+    "Enter the code sent to your inbox to confirm your email id and keep your account secure. "
+  ],
+  "bank-upload": [
+    "Verifying your bank account ensures smooth transactions.",
+    "Any withdrawal or any other financial transaction like a dividend payout will be sent to your registered bank account.",
+    "Enter your bank details carefully, ensuring the account is in your name for seamless operations."
+  ],
+  "digilocker":[
+    "DigiLocker is a secure app for storing your government documents online.",
+    "Use it to verify your PAN and Aadhaar easily by entering the OTP sent to your mobile."
+  ],
+  "personal":[
+    "Providing accurate personal details is essential for account setup. It helps us personalize your investment journey.",
+    "Fill in your gender, father's name, income range, marital status, and nominee information carefully."
+  ],
+  "nominee":[
+    "Adding a nominee safeguards your investments for the future.",
+    "Adding a nominee is mandatory; however, if you're unsure who to add, you can skip it for now and provide the details later."
+  ],
+   "bank-details":[
+    "Verifying your bank account ensures smooth transactions.",
+    "Any withdrawal or any other financial transaction like a dividend payout will be sent to your registered bank account.",
+    "Enter your bank details carefully, ensuring the account is in your name for seamless operations."
+  ],
+  "signature":[
+    "Your digital signature is needed to legally bind the agreement.",
+    "Sign on the screen, matching it with your official signature on your PAN."
+  ],
+  "fno":[
+    "To trade in futures & options you need to complete your derivatives segment activation.",
+    "Upload relevant documents like 6-month bank statements, ITR, or last 3-month salary slips for approval."
+  ],
+  "selfie":[
+    "Make sure you are not wearing hat, sunglasses or specs.",
+    "Click picture in a well lit area."
+  ],
+  "application-form":[
+    "Reviewing your application ensures all details are correct before submission. ",
+    "Confirm everything by entering your Aadhaar number and OTP."
+  ],
+  "retail-pack":[
+    "Upgrading to a premium plan offers significant savings on brokerage fees. ",
+    "Review the benefits and proceed with the upgrade for reduced rates."
+  ]
+}

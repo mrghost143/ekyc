@@ -1,0 +1,6 @@
+.footer{
+    @apply my-10 ;
+    &-logo{
+        @apply text-blue-600 text-2xl font-semibold	text-center;
+    }
+}

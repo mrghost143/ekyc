@@ -1,0 +1,31 @@
+.btn {
+  @apply rounded-full w-full text-base uppercase font-medium cursor-pointer;
+  padding: 0.75rem 1rem;
+  line-height: 2.5rem;
+  &-primary {
+    &:is(.valid, .loading) {
+      @apply bg-linear-orange text-white;
+    }
+
+    &:is(.invalid, .disable) {
+      @apply bg-gray text-white;
+    }
+  }
+  &-secondary {
+    @apply bg-white text-orange;
+    &.loading {
+      .spinner {
+        @apply border-t-orange;
+      }
+    }
+
+    &:is(.valid, .loading) {
+      @apply border-orange border border-solid;
+    }
+    &:is(.invalid, .disable) {
+      @apply border-gray border border-solid text-gray;
+    }
+  }
+}
+
+

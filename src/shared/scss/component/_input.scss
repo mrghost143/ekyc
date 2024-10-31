@@ -1,0 +1,135 @@
+.input-field {
+  @apply w-full;
+
+  &::placeholder {
+    @apply text-gray text-base;
+  }
+
+  &-container {
+    @apply pb-8 relative mb-4;
+  }
+
+  &-label {
+    @apply text-black-500 font-medium mb-4 text-base inline-block;
+  }
+
+  &-wrapper {
+    @apply border border-gray border-solid rounded-md p-4 text-base;
+
+    &.focus {
+      @apply border-blue-600;
+    }
+    &.error {
+      @apply border-red;
+    }
+  }
+
+  &-message {
+    @apply text-red text-base absolute bottom-0;
+  }
+}
+
+.radio {
+  &-container {
+    @apply pb-8 relative mb-4;
+  }
+  &-label {
+    @apply text-black-500 font-medium mb-4 text-base inline-block;
+  }
+
+  &-field {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    &-input {
+      display: none;
+
+      &:checked + .radio-field-label {
+        background-color: #002953;
+        color: #fff;
+      }
+    }
+
+    &-label {
+      padding: 0.8rem 1.1rem;
+      border: 1px solid #002953;
+      font-size: 1.4rem;
+      line-height: 1.42;
+      color: #002953;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      display: block;
+    }
+  }
+}
+
+.required-tag {
+  @apply text-red;
+}
+
+.select {
+  &-container {
+    @apply pb-8 relative mb-4;
+  }
+
+  &-label {
+    @apply text-black-500 font-medium mb-4 text-base inline-block;
+  }
+
+  &-wrapper {
+    @apply border border-gray border-solid rounded-md text-base;
+
+    &.focus {
+      @apply border-blue-600;
+    }
+    &.error {
+      @apply border-red;
+    }
+  }
+}
+.react-select {
+  &__control {
+    border: none !important;
+    box-shadow: none !important;
+    min-height: unset !important;
+    @apply p-3;
+  }
+  &__menu {
+    z-index: 2000;
+    // width: 100% !important;
+    // background: red;
+  }
+
+  &__indicator {
+    @apply text-orange !important;
+    padding: 0 !important;
+    &-separator {
+      display: none !important;
+    }
+  }
+  &__value-container {
+    max-width: unset !important;
+    padding: 0 !important;
+  }
+
+  &__single-value {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.date {
+  &-container {
+    @apply pb-8 relative mb-4;
+  }
+
+  &-label {
+    @apply text-black-500 font-medium mb-4 text-base inline-block;
+  }
+}
+

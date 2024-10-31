@@ -1,0 +1,52 @@
+.slider {
+  &-container {
+    margin: 0 auto 20px auto;
+
+    .slick {
+      &-dots {
+        display: flex !important;
+        position: relative;
+        inset: unset;
+        gap: 0.8rem;
+        li {
+          margin: 0;
+          height: unset;
+          width: unset;
+          @apply rounded-full bg-blue-600  bg-white-400;
+
+          button {
+            width: 0.9rem;
+            height: 0.9rem;
+            padding: 0;
+
+            &::before {
+              display: none;
+            }
+          }
+
+          &.slick-active {
+            width: 4.3rem;
+            @apply bg-blue-600;
+          }
+        }
+      }
+      &-list {
+        @apply m-auto;
+      }
+
+      &-slide {
+        img {
+          margin: 0 auto 10px;
+        }
+      }
+    }
+  }
+
+  &-title {
+    @apply text-black text-3xl mb-5 font-medium leading-tight;
+  }
+
+  &-subtitle {
+    @apply text-xl mb-5 text-blue-300;
+  }
+}

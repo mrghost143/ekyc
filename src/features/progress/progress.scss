@@ -1,0 +1,36 @@
+.progress {
+    &-header {
+        @apply flex justify-between text-base text-gray-300; // Tailwind classes
+    }
+
+    &-container{
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    &-bar {
+        @apply py-4 flex justify-between gap-1.5; // Tailwind classes
+    }
+    &-item {
+        @apply flex-1 bg-gray-400 rounded-full h-2.5 relative overflow-hidden;
+
+        &.completed {
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                @apply bg-green;
+            }
+        }
+
+        &.in-progress {
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                width: 48%; // Adjust for actual progress
+                @apply bg-green rounded-full; // Tailwind classes
+            }
+        }
+    }
+}

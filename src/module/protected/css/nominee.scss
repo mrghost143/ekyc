@@ -1,0 +1,27 @@
+.review-nominee {
+    &-container {
+      @apply border border-gray-400 border-solid p-5 mb-6;
+      border-radius: 0.4rem
+    }
+  
+    &-wrapper {
+      @apply flex justify-between;
+    }
+  
+    &-label{
+      @apply text-blue-300 text-sm;
+      line-height: 1.6rem;
+    }
+  
+    &-value{
+      @apply text-base text-black;
+      line-height: 2.0rem;
+    }
+
+    &-add-btn{
+        @apply text-base text-orange mb-6 ;
+        line-height: 1.6rem;
+  
+    }
+  }
+  

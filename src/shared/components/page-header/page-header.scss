@@ -1,0 +1,18 @@
+.page {
+    &-title {
+        @apply text-4xl font-medium mb-3;
+        line-height: 2.6rem;
+    }
+
+    &-subtitle {
+        @apply text-xl font-normal text-gray-300
+    }
+
+    &-header-wrapper {
+        position: relative;
+        // left: -35px;
+    }
+
+
+    
+}

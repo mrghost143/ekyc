@@ -1,0 +1,27 @@
+.fno-card {
+  @apply flex gap-2 items-center p-3 text-sm rounded-xl;
+
+  p {
+    @apply leading-tight;
+  }
+}
+
+.custom-radio {
+  &-wrapper {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #dadada;
+    @apply flex items-center gap-4;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &-container {
+    @apply mb-6;
+  }
+
+  &-label {
+    @apply text-base leading-tight;
+  }
+}

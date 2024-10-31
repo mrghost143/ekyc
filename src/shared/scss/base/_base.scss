@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: none;
+  @apply leading-none;
+
+  &:disabled {
+    cursor: not-allowed !important;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    // background: #002256cf;
+    background: #d8d0d0;
+
+    border-radius: 10px 0 0 10px;
+
+    &:hover {
+      background: #d8d0d0;
+    }
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $primary-font;
+  font-weight: 400;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex: 1;
+
+  @apply container px-0;
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+.aside {
+  width: 100%;
+  position: relative;
+  // max-width: 500px;
+  // flex-basis: 150px;y
+  max-width: 550px;
+  // margin: 0 auto;
+  padding: 5rem;
+  @apply bg-white-300 mx-0 flex flex-col gap-10;
+
+  &-wrapper {
+    // @apply bg-white-300
+    flex: 0.5;
+
+  }
+
+  &-img {
+    object-fit: contain;
+    max-width: 85%;
+    aspect-ratio: 1 / 1;
+  }
+
+  &-close {
+    position: absolute;
+    display: none !important;
+    place-content: center;
+    width: 22px;
+    height: 22px;
+    color: black;
+    right: 35px;
+    top: 22px;
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+
+  .page-container {
+    @apply w-full mx-auto flex gap-4 items-start;
+    max-width: 55rem;
+    margin-top: 2rem;
+
+    .form-container {
+      @apply flex-1;
+    }
+  }
+}
+
+.container {
+  @include breakpoint(ipad) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.box {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.img-preview {
+  overflow: hidden;
+}
+
+.need-help {
+  line-height: 1.6rem;
+
+  &-wrapper {
+    @apply bg-white-500 rounded-xl text-sm flex items-start gap-3 p-4 text-black-500;
+  }
+}
+
+.page-aside-title {
+  @apply text-2xl font-medium;
+}
+
+input {
+  &:is([type="checkbox"], [type="radio"]) {
+    accent-color: #ff5c00;
+    scale: 1.2;
+
+    &:hover {
+      accent-color: #ff5c00;
+
+    }
+  }
+}
+

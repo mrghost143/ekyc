@@ -1,0 +1,67 @@
+.pack-card {
+  @apply border border-solid border-gray-200 rounded-xl p-3 flex flex-col ;
+  flex: 1;
+
+
+  &-tag{
+    @apply border border-solid rounded-full w-fit mx-auto   
+     px-4 py-2 text-xsm leading-tight flex items-center gap-1 mb-3 
+  }
+
+  &-heading {
+    @apply p-3 rounded-xl flex flex-col gap-2 mb-7;
+  }
+
+  &-title {
+    @apply text-white text-base leading-tight;
+  }
+
+  &-img {
+    @apply mx-auto mb-7;
+    object-fit: contain;
+  }
+
+  &-details {
+    @apply grid  lg:grid-cols-2  grid-cols-1 gap-x-2 gap-y-5 mb-4;
+
+    &-wrapper {
+      @apply flex items-center gap-2;
+    }
+
+    &-title {
+      @apply text-sm text-gray-300 leading-tight;
+    }
+
+    &-subtitle {
+      @apply text-base font-medium text-black-500 leading-tight;
+    }
+  }
+
+  &-amcdetails {
+    @apply flex items-center gap-2 mb-7;
+
+    &-wrapper {
+      @apply w-full;
+    }
+
+    &-title {
+      @apply text-sm text-gray-300 leading-tight;
+    }
+
+    &-subtitle {
+      @apply text-base font-medium text-black-500 leading-tight;
+    }
+  }
+
+  &-price {
+    @apply text-4xl font-medium;
+    &-wrapper {
+        @apply bg-white rounded-full px-4 py-4 flex justify-center items-end gap-3;
+        margin-top: auto
+    }
+
+    &-text{
+        @apply text-xsm font-medium leading-tight;
+    }
+  }
+}
